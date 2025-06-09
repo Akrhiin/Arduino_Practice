@@ -1,7 +1,7 @@
 {
     "version": 1,
-    "author": "",
-    "editor": "",
+    "author": "Michael Pace",
+    "editor": "wokwi",
     "parts": [
         {
             "id": "uno1",
@@ -10,7 +10,5 @@
             "top": 50
         }
     ],
-    "connections": [
-
-    ]
+    "connections": []
 }

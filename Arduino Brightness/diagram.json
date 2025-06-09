@@ -1,0 +1,35 @@
+{
+    "version": 1,
+    "author": "Michael Pace",
+    "editor": "wokwi",
+    "parts": [
+        {
+            "id": "uno1",
+            "type": "wokwi-arduino-uno",
+            "left": 100,
+            "top": 50,
+            "rotate": 90
+        },
+        {
+            "id": "slideP",
+            "type": "wokwi-slide-potentiometer",
+            "left": 133,
+            "top": 305,
+            "attrs": {"value": "0", "travelLength": "100"}
+        },
+        {
+            "id": "led",
+            "type": "wokwi-led",
+            "left": 355,
+            "top": 202,
+            "rotate": 270
+        }
+    ],
+    "connections": [
+        [ "uno1:GND.2", "slideP:GND", "black", ["h-30","v125","h500","v0"] ],
+        [ "uno1:5V", "slideP:VCC", "red", ["h-40","v0"] ],
+        [ "uno1:A0", "slideP:SIG", "orange", ["h-50", "v0"] ],
+        [ "uno1:9", "led:A", "red", ["h75","v0"] ],
+        [ "uno1:GND.2", "led:C", "black", ["h-20", "v115", "h278", "v0"] ]
+    ]
+}
