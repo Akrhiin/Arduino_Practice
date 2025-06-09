@@ -1,8 +1,13 @@
 #include <Arduino.h>
 
+const int buttonPin = 8;
+
 void setup() {
+  pinMode(buttonPin, INPUT);
+  pinMode(LED_BUILTIN, OUTPUT);
 }
 
 void loop() {
-  // put your main code here, to run repeatedly:
+  int currentPin = digitalRead(buttonPin);
+  digitalWrite(LED_BUILTIN, currentPin);
 }
